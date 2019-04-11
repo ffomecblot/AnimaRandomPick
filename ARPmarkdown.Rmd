@@ -1,9 +1,10 @@
 ---
-title: "Aide pour AnimaBF"
+title: "AnimaRandomPick"
 author: "Cree par Ffomecblot"
 output:
   html_document:
     self_contained: false
+    keep_md: true
 ---
 
 ```{r include = FALSE}
@@ -13,9 +14,9 @@ library(tutorial)
 tutorial::go_interactive()
 ```
 
-Bonjour et bienvenue sur la page d'aide pour AnimaG&G.
+Bonjour et bienvenue sur la page d'aide pour AnimaBF.
 
-
+-
 
 Fonction pour le sort Caprices du Destin (Chaos niveau 14).
 
@@ -62,7 +63,7 @@ Fonction pour le sort Random (Chaos niveau 34).
 ```{r}
 # # Parametres
 lvlMax <- 70 # 50, 60 ou 70
-nombreDeSorts <- 10
+nombreDeSorts <- 4
 
 # # Fonctions
 maVoie <- function (lv, selec = 1) {
