@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Cree par Ffomecblot" />
+
+
+<title>Aide pour AnimaBF</title>
+
+<script src="ARPmarkdown_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="ARPmarkdown_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="ARPmarkdown_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="ARPmarkdown_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="ARPmarkdown_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="ARPmarkdown_files/navigation-1.1/tabsets.js"></script>
+<link href="ARPmarkdown_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="ARPmarkdown_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Aide pour AnimaBF</h1>
+<h4 class="author">Cree par Ffomecblot</h4>
+
+</div>
+
+
+<script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+<p>Bonjour et bienvenue sur la page d’aide pour AnimaG&amp;G.</p>
+<p>Fonction pour le sort Caprices du Destin (Chaos niveau 14).</p>
+<div id="etat-negatif-aleatoire" class="section level2">
+<h2>Etat negatif aleatoire</h2>
+<div data-datacamp-exercise="" data-height="300" data-encoded="true">
+eyJsYW5ndWFnZSI6InIiLCJzYW1wbGUiOiIjIFBhcmFtZXRyZXNcbm5iX2pldCA8LSAxXG5cbiMgRGF0YVxuZXRhdHMgPC0gYygnUGV1ciA6IC02MCBUbEEgYXV0cmVzIHF1ZSBmdWlyLCBzYXVmIHNpIHBhc3NlIHVuIHRlc3QgODAgZW4gSW1wYXNzaWJpbGl0ZScsXG4gICAgICAgICAgICdUZXJyZXVyIDogbmUgcGV1dCBmYWlyZSBxdWUgZnVpciwgc2F1ZiBzaSBwYXNzZSB1biB0ZXN0IDE0MCBlbiBJbXBhc3NpYmlsaXRlJyxcbiAgICAgICAgICAgJ0RvdWxldXIgOiAtNDAgVGxBIHNhdWYgc2kgcGFzc2UgdW4gdGVzdCA4MCBkZSBSZXNpc3RhbmNlIGEgbGEgZG91bGV1cicsXG4gICAgICAgICAgICdEb3VsZXVyIGV4dHJlbWUgOiAtODAgVGxBIHNhdWYgc2kgcGFzc2UgdW4gdGVzdCAxNDAgZGUgUmVzaXN0YW5jZSBhIGxhIGRvdWxldXInLFxuICAgICAgICAgICAnRmFpYmxlc3NlIHBoeXNpcXVlIDogLTQgZW4gRm9yY2UsIERleHRlcml0ZSwgQWdpbGl0ZSwgQ29uc2l0dXRpb24nLFxuICAgICAgICAgICAnRmFpYmxlc3NlIG1lbnRhbGUgOiAtNCBlbiBJbnRlbGxpZ2VuY2UsIFBvdXZvaXIsIFZvbG9udGUsIFBlcmNlcHRpb24nLFxuICAgICAgICAgICAnUGFyYWx5c2llIHBhcnRpZWxsZSA6IC04MCBhdXggamV0cyBkZSBjb21iYXQsIC0zMCBhdXggYXV0cmVzIGFjdGlvbnMgZXQgYSBsIGluaXRpYXRpdmUnLFxuICAgICAgICAgICAnUGFyYWx5c2llIGNvbXBsZXRlIDogLTIwMCBUbEEgZXQgaW5pdGlhdGl2ZScsXG4gICAgICAgICAgICdDb2xlcmUgOiBhdHRhcXVlIGxlcyBjaWJsZXMgbGVzIHBsdXMgcHJvY2hlcyBsZSBwbHVzIGZvcnQgcG9zc2libGUsIHNhdWYgc2kgcGFzc2UgdW4gdGVzdCAxMjAgZW4gSW1wYXNzaWJpbGl0ZScsXG4gICAgICAgICAgICdDZWNpdGUgOiBhdmV1Z2xlIGV0IC04MCBUbEEgJyxcbiAgICAgICAgICAgJ1N1cmRpdGUgOiBuZSBwZXV0IHBsdXMgZW50ZW5kcmUnLFxuICAgICAgICAgICAnTXV0aXNtZSA6IG5lIHBldXQgcGx1cyBwYXJsZXInLFxuICAgICAgICAgICAnRmFzY2luYXRpb24gOiBhdWN1bmUgYWN0aW9uIGFjdGl2ZSBuaSBzZSBkZXBsYWNlciwgc2F1ZiBzaSBwYXNzZSB1biB0ZXN0IDEyMCBlbiBJbXBhc3NpYmlsaXRlJyxcbiAgICAgICAgICAgJ0RlZ2F0cyBlZ2F1eCBhIGxhIG1hcmdlIGQgZWNoZWMnLFxuICAgICAgICAgICAnRGVnYXRzIGVnYXV4IGF1IGRvdWJsZSBkZSBsYSBtYXJnZSBkIGVjaGVjJyxcbiAgICAgICAgICAgJ0luY29uc2NpZW5jZScsXG4gICAgICAgICAgICdIYWxsdWNpbmF0aW9ucywgc2F1ZiBzaSBwYXNzZSB1biB0ZXN0IDE0MCBlbiBJbXBhc3NpYmlsaXRlJyxcbiAgICAgICAgICAgJ0ZvbGllLCBzYXVmIHNpIHBhc3NlIHVuIHRlc3QgMTQwIGVuIEltcGFzc2liaWxpdGUnLFxuICAgICAgICAgICAnUGV0aXQgY291cCBkZSBiYXJyZSA6IG1hbHVzIGRlIC0yMCBUbEEnLFxuICAgICAgICAgICAnRXh0ZW51YXRpb24gOiBwZXJkIDUgcG9pbnRzIGRlIGZhdGlndWUgKG5lIHJldmllbm5lbnQgcGFzIGEgbGEgZmluIGR1IHNvcnQpJyxcbiAgICAgICAgICAgJ05hdXNzZSBldCBtYWwgZGUgY3JhbmUgY2luZ2xhbnQgOiBtYWx1cyBkZSAtNTAgVGxBJylcblxuXG4jICMgRXhlY1xuc2FtcGxlKGV0YXRzLCBuYl9qZXQpIn0=
+</div>
+<p>Fonction pour le sort Random() (Chaos niveau 34).</p>
+</div>
+<div id="sort-aleatoire" class="section level2">
+<h2>Sort aleatoire</h2>
+<div data-datacamp-exercise="" data-height="300" data-encoded="true">
+eyJsYW5ndWFnZSI6InIiLCJzYW1wbGUiOiIjICMgUGFyYW1ldHJlc1xubHZsTWF4IDwtIDcwICMgNTAsIDYwIG91IDcwXG5ub21icmVEZVNvcnRzIDwtIDEwXG5cbiMgIyBGb25jdGlvbnNcbm1hVm9pZSA8LSBmdW5jdGlvbiAobHYsIHNlbGVjID0gMSkge1xuICAjIGRlZlxuICBub21zUHJpIDwtIGMoXCJMdW1pZXJlXCIsXCJPYnNjdXJpdGVcIixcIkNyZWF0aW9uXCIsXCJEZXN0cnVjdGlvblwiLFwiTmVjcm9cIixcIkVhdVwiLFwiRmV1XCIsXCJUZXJyZVwiLFxuICBcIkFpclwiLFwiRXNzZW5jZVwiLFwiSWxsdXNpb25cIilcbiAgbm9tc1NlYyA8LSBjKFwiQ2hhb3NcIixcIkNvbm5haXNzYW5jZVwiLFwiR3VlcnJlXCIsXCJMaXRlcmFlXCIsXG4gIFwiTW9ydFwiLFwiTXVzaXF1ZVwiLFwiTm9ibGVzc2VcIixcIlBhaXhcIixcIlBlY2hlXCIsXCJSZXZlXCIsXG4gIFwiU2FuZ1wiLFwiU2VjcmV0XCIsXCJUZW1wc1wiLFwiVmlkZVwiKVxuICBcbiAgaWYgKGx2ICUlIDEwID09IDQpIHtcbiAgICAjIHRpcmVyIHVuZSBzZWNvbmRhaXJlXG4gICAgdm9pZSA8LSBzYW1wbGUobm9tc1NlYywxKVxuICB9IGVsc2Uge1xuICAgICMgY2hvaXNpciBsYSBwcmltYWlyZVxuICAgIHZvaWUgPC0gbm9tc1ByaVtzZWxlY11cbiAgfVxuICByZXR1cm4odm9pZSlcbn1cbnNvcnRBdUhhc2FyZCA8LSBmdW5jdGlvbihsdmxNYXggPSA0MCwgbmIgPSAxKSB7XG4gICMgZGVmXG4gIG5vbXNSYW5nIDwtIGMoXCJiYXNpcXVlXCIsIFwiaW50ZXJtZWRpYWlyZVwiLCBcImF2YW5jZVwiLCBcImFyY2FuZVwiKVxuICBcbiAgZm9yIChpIGluIDE6bmIpIHtcbiAgICByYW5nIDwtIHNhbXBsZShub21zUmFuZywgMSlcbiAgICBsdiA8LSBzYW1wbGUoMToobHZsTWF4LzIpLCAxKSAqMlxuICAgIFxuICAgIG1pbk1haiA8LSBzYW1wbGUoMToxMSwgMSlcbiAgICBpZiAobWluTWFqIDwgNikge1xuICAgICAgIyBWb2llIG1hamV1cmVcbiAgICAgIHZvaWUgPC0gbWFWb2llKGx2LCBtaW5NYWopXG4gICAgICBcbiAgICB9IGVsc2Uge1xuICAgICAgIyBWb2llIG1pbmV1cmUgOyByZWxhbmNlciBwb3VyIG5lIHBhcyB0b21iZXIgc3VyIHVuIDhcbiAgICAgIHdoaWxlIChsdiAlJSAxMCA9PSA4KSB7XG4gICAgICAgIGx2IDwtIHNhbXBsZSgxOihsdmxNYXgvMiksIDEpICoyXG4gICAgICB9XG4gICAgICBcbiAgICAgIHZvaWUgPC0gbWFWb2llKGx2LCBtaW5NYWopXG4gICAgfVxuICAgIHByaW50KHBhc3RlMChcIlNvcnQgZGUgbml2ZWF1IFwiLCBsdiwgXCIsIGRlIGxhIHZvaWUgXCIsIHZvaWUsIFwiLCBhdSByYW5nIFwiLCByYW5nLCBcIi5cIikpXG4gIH1cbn1cblxuIyAjIEV4ZWNcbnNvcnRBdUhhc2FyZChsdmxNYXgsIG5vbWJyZURlU29ydHMpIn0=
+</div>
+<p>Fonction pour le sort Rejeton du Chaos (Chaos 54).</p>
+</div>
+<div id="rejeton-du-chaos" class="section level2">
+<h2>Rejeton du Chaos</h2>
+<div data-datacamp-exercise="" data-height="300" data-encoded="true">
+eyJsYW5ndWFnZSI6InIiLCJzYW1wbGUiOiIjIyBQYXJhbWV0cmVzXG5uaXZlYXUgPC0gNFxubm9tYnJlRGVDcmVhIDwtIDFcblxuIyMgRGF0YVxuIyBOb20gZGUgbGEgY3JlYXR1cmVcbnBhcnQxIDwtIGMoJ0dsb29tJywgJ0dyYXknLCAnRGlyZScsICdCbGFjaycsICdTaGFkb3cnLCAnSGF6ZScsICdXaW5kJywgJ1N0b3JtJywgJ1dhcnAnLCAnTmlnaHQnLFxuICAgICAgICAgICAgJ01vb24nLCAnU3RhcicsICdQaXQnLCAnRmxhbWUnLCAnSWNlJywgJ1NlZXRoZScsICdTaGFycCcsICdBc2gnLCAnQmxhZGUnLCAnU3RlZWwnLCAnU3RvbmUnLFxuICAgICAgICAgICAgJ1J1c3QnLCAnTW9sZCcsICdCbGlnaHQnLCAnUGxhZ3VlJywgJ1JvdCcsICdPb3plJywgJ1B1a2UnLCAnU25vdCcsICdCaWxlJywgJ0Jsb29kJywgJ1B1bHNlJyxcbiAgICAgICAgICAgICdHdXQnLCAnR29yZScsICdGbGVzaCcsICdCb25lJywgJ1NwaW5lJywgJ01pbmQnLCAnU3Bpcml0JywgJ1NvdWwnLCAnV3JhdGgnLCAnR3JpZWYnLCAnRm91bCcsXG4gICAgICAgICAgICAnVmlsZScsICdTaW4nLCAnQ2hhb3MnLCAnRHJlYWQnLCAnRG9vbScsICdCYW5lJywgJ0RlYXRoJywgJ1ZpcGVyJywgJ0RyYWdvbicsICdEZXZpbCcpXG5wYXJ0MiA8LSBjKCdUb3VjaCcsICdTcGVsbCcsICdGZWFzdCcsICdXb3VuZCcsICdHcmluJywgJ01haW0nLCAnSGFjaycsICdCaXRlJywgJ1JlbmQnLCAnQnVybicsICdSaXBwZXInLFxuICAgICAgICAgICAgJ0tpbGwnLCAnQ2FsbCcsICdWZXgnLCAnSmFkZScsICdXZWInLCAnU2hpZWxkJywgJ0tpbGxlcicsICdSYXpvcicsICdEcmlua2VyJywgJ1NoaWZ0ZXInLFxuICAgICAgICAgICAgJ0NyYXdsZXInLCAnRGFuY2VyJywgJ0JlbmRlcicsICdXZWF2ZXInLCAnRWF0ZXInLCAnV2lkb3cnLCAnTWFnZ290JywgJ1NwYXduJywgJ1dpZ2h0JyxcbiAgICAgICAgICAgICdHcnVtYmxlJywgJ0dyb3dsZXInLCAnU25hcmwnLCAnV29sZicsICdDcm93JywgJ1JhdmVuJywgJ0hhd2snLCAnQ2xvdWQnLCAnQmFuZycsICdIZWFkJyxcbiAgICAgICAgICAgICdTa3VsbCcsICdCcm93JywgJ0V5ZScsICdNYXcnLCAnVG9uZ3VlJywgJ0ZhbmcnLCAnSG9ybicsICdUaG9ybicsICdDbGF3JywgJ0Zpc3QnLCAnSGVhcnQnLFxuICAgICAgICAgICAgJ1NoYW5rJywgJ1NraW4nLCAnV2luZycsICdQb3gnLCAnRmVzdGVyJywgJ0JsaXN0ZXInLCAnUHVzJywgJ1NsaW1lJywgJ0Ryb29sJywgJ0Zyb3RoJyxcbiAgICAgICAgICAgICdTbHVkZ2UnLCAnVmVub20nLCAnUG9pc29uJywgJ0JyZWFrJywgJ1NoYXJkJywgJ0ZsYW1lJywgJ01hdWwnLCAnVGhpcnN0JywgJ0x1c3QnKVxucGFydDMgPC0gYygndGhlIEhhbW1lcicsICd0aGUgQXhlJywgJ3RoZSBTaGFycCcsICd0aGUgSmFnZ2VkJywgJ3RoZSBGbGF5ZXInLCAndGhlIFNsYXNoZXInLCAndGhlIEltcGFsZXInLFxuICAgICAgICAgICAndGhlIEh1bnRlcicsICd0aGUgU2xheWVyJywgJ3RoZSBNYXVsZXInLCAndGhlIERlc3Ryb3llcicsICd0aGUgUXVpY2snLCAndGhlIFdpdGNoJywgJ3RoZSBNYWQnLFxuICAgICAgICAgICAndGhlIFdyYWl0aCcsICd0aGUgU2hhZGUnLCAndGhlIERlYWQnLCAndGhlIFVuaG9seScsICd0aGUgSG93bGVyJywgJ3RoZSBHcmltJywgJ3RoZSBEYXJrJyxcbiAgICAgICAgICAgJ3RoZSBUYWludGVkJywgJ3RoZSBVbmNsZWFuJywgJ3RoZSBIdW5ncnknLCAndGhlIENvbGQnKVxuXG4jIENsYXNzZSBkZSBsYSBjcmVhdHVyZSA7IDEgPSBndWVycmllciwgMiA9IG1hZ2ljaWVuLCAzID0gZFxuY2xhc3NlcyA8LSBjKFwiR3VlcnJpZXJcIilcblxuXG4jIyBFeGVjXG5mb3IgKGkgaW4gMTpub21icmVEZUNyZWEpIHtcbiAgcHJpbnQocGFzdGUoXCJDcmVhdHVyZVwiLCBpKSlcbiAgcHJpbnQocGFzdGUoc2FtcGxlKHBhcnQxLCAxKSxzYW1wbGUocGFydDIsIDEpLHNhbXBsZShwYXJ0MywgMSkpKVxuICBcbiAgbWFDbGFzc2UgPC0gc2FtcGxlKGNsYXNzZXMsIDEpXG4gIHByaW50KHBhc3RlKG1hQ2xhc3NlLCBcIm5pdmVhdVwiLCBuaXZlYXUpKVxufSJ9
+</div>
+<p>Fonction pour obtenir un Ogham.</p>
+</div>
+<div id="ogham-loot" class="section level2">
+<h2>Ogham loot</h2>
+<div data-datacamp-exercise="" data-height="300" data-encoded="true">
+eyJsYW5ndWFnZSI6InIiLCJzYW1wbGUiOiIjIE5vbWJyZSBkJ09naGFtc1xubmIgPC0gNVxuYXZlY0RldGFpbCA8LSBGXG5cbiMgTm9tc1xuTm9tcyA8LSBjKFwiRWxcIixcIkVsZFwiLFwiVGlyXCIsXCJOZWZcIixcIkV0aFwiLFwiSXRoXCIsXCJUYWxcIixcIlJhbFwiLFwiT3J0XCIsXCJUaHVsXCIsXCJBbW5cIixcIlNvbFwiLFwiU2hhZWxcIixcIkRvbFwiLFwiSGVsXCIsXCJJb1wiLFwiTHVtXCIsXCJLb1wiLFwiRmFsXCIsXCJMZW1cIixcIlB1bFwiLFwiVW1cIixcIk1hbFwiLFwiSXN0XCIsXCJHdWxcIixcIlZleFwiLFwiT2htXCIsXCJMb1wiLFwiU3VyXCIsXCJCZXJcIixcIkphaFwiLFwiQ2hhbVwiLFwiWm9kXCIpXG5cbiMgUHJvYmFcbmxvb3QgPC0gZnVuY3Rpb24obj0xKSB7XG4gIHUgPC0gaW50ZWdlcihuKVxuICBmb3IgKGkgaW4gMTpuKSB7XG4gICAgdVtpXSA8LSBtaW4oZmxvb3IocnVuaWYoMywwLDMzKSkrMSlcbiAgfVxuICByZXR1cm4odSlcbn1cblxubW9uTG9vdCA8LSBsb290KG5iKVxubW9uTG9vdCA8LSBtb25Mb290W29yZGVyKG1vbkxvb3QpXVxuXG5hIDwtIHRhYmxlKG1vbkxvb3QpXG5uYW1lcyhhKSA8LSBOb21zW2FzLmludGVnZXIobmFtZXMoYSkpXVxuXG5pZiAoYXZlY0RldGFpbCkge1xuICBwcmludChpZmVsc2UobmIgPjEsIFwiT2doYW1zIG9idGVudXMgOlwiLCBcIk9naGFtIG9idGVudSA6XCIpKVxuICBwcmludChhKVxuICAjcHJpbnQoZGVzY0FybWVbdW5pcXVlKG1vbkxvb3QpXSlcbn0gZWxzZSB7XG4gIHByaW50KGlmZWxzZShuYiA+MSwgXCJPZ2hhbXMgb2J0ZW51cyA6XCIsIFwiT2doYW0gb2J0ZW51IDpcIikpXG4gIHByaW50KGEpXG59In0=
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

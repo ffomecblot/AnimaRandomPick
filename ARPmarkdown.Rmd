@@ -55,7 +55,7 @@ sample(etats, nb_jet)
 ```
 
 
-Fonction pour le sort Random() (Chaos niveau 34).
+Fonction pour le sort Random (Chaos niveau 34).
 
 ## Sort aleatoire
 

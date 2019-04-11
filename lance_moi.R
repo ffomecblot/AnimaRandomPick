@@ -19,7 +19,7 @@ sample(etatNeg, nb_jet, T)
 
 # # Paramètres
 lvlMax <- 70 # 50, 60 ou 70
-nombreDeSorts <- 10
+nombreDeSorts <- 4
 
 # # Exec
 sortAuHasard(lvlMax, nombreDeSorts)
