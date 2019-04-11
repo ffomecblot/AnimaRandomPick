@@ -1,0 +1,200 @@
+---
+title: "Aide pour AnimaBF"
+author: "Cree par Ffomecblot"
+output:
+  html_document:
+    self_contained: false
+---
+
+```{r include = FALSE}
+## Biblotheques
+
+library(tutorial)
+tutorial::go_interactive()
+```
+
+Bonjour et bienvenue sur la page d'aide pour AnimaG&G.
+
+
+
+Fonction pour le sort Caprices du Destin (Chaos niveau 14).
+
+## Etat negatif aleatoire
+
+```{r}
+# Parametres
+nb_jet <- 1
+
+# Data
+etats <- c('Peur : -60 TlA autres que fuir, sauf si passe un test 80 en Impassibilite',
+           'Terreur : ne peut faire que fuir, sauf si passe un test 140 en Impassibilite',
+           'Douleur : -40 TlA sauf si passe un test 80 de Resistance a la douleur',
+           'Douleur extreme : -80 TlA sauf si passe un test 140 de Resistance a la douleur',
+           'Faiblesse physique : -4 en Force, Dexterite, Agilite, Consitution',
+           'Faiblesse mentale : -4 en Intelligence, Pouvoir, Volonte, Perception',
+           'Paralysie partielle : -80 aux jets de combat, -30 aux autres actions et a l initiative',
+           'Paralysie complete : -200 TlA et initiative',
+           'Colere : attaque les cibles les plus proches le plus fort possible, sauf si passe un test 120 en Impassibilite',
+           'Cecite : aveugle et -80 TlA ',
+           'Surdite : ne peut plus entendre',
+           'Mutisme : ne peut plus parler',
+           'Fascination : aucune action active ni se deplacer, sauf si passe un test 120 en Impassibilite',
+           'Degats egaux a la marge d echec',
+           'Degats egaux au double de la marge d echec',
+           'Inconscience',
+           'Hallucinations, sauf si passe un test 140 en Impassibilite',
+           'Folie, sauf si passe un test 140 en Impassibilite',
+           'Petit coup de barre : malus de -20 TlA',
+           'Extenuation : perd 5 points de fatigue (ne reviennent pas a la fin du sort)',
+           'Nausse et mal de crane cinglant : malus de -50 TlA')
+
+
+# # Exec
+sample(etats, nb_jet)
+
+```
+
+
+Fonction pour le sort Random() (Chaos niveau 34).
+
+## Sort aleatoire
+
+```{r}
+# # Parametres
+lvlMax <- 70 # 50, 60 ou 70
+nombreDeSorts <- 10
+
+# # Fonctions
+maVoie <- function (lv, selec = 1) {
+  # def
+  nomsPri <- c("Lumiere","Obscurite","Creation","Destruction","Necro","Eau","Feu","Terre",
+  "Air","Essence","Illusion")
+  nomsSec <- c("Chaos","Connaissance","Guerre","Literae",
+  "Mort","Musique","Noblesse","Paix","Peche","Reve",
+  "Sang","Secret","Temps","Vide")
+  
+  if (lv %% 10 == 4) {
+    # tirer une secondaire
+    voie <- sample(nomsSec,1)
+  } else {
+    # choisir la primaire
+    voie <- nomsPri[selec]
+  }
+  return(voie)
+}
+sortAuHasard <- function(lvlMax = 40, nb = 1) {
+  # def
+  nomsRang <- c("basique", "intermediaire", "avance", "arcane")
+  
+  for (i in 1:nb) {
+    rang <- sample(nomsRang, 1)
+    lv <- sample(1:(lvlMax/2), 1) *2
+    
+    minMaj <- sample(1:11, 1)
+    if (minMaj < 6) {
+      # Voie majeure
+      voie <- maVoie(lv, minMaj)
+      
+    } else {
+      # Voie mineure ; relancer pour ne pas tomber sur un 8
+      while (lv %% 10 == 8) {
+        lv <- sample(1:(lvlMax/2), 1) *2
+      }
+      
+      voie <- maVoie(lv, minMaj)
+    }
+    print(paste0("Sort de niveau ", lv, ", de la voie ", voie, ", au rang ", rang, "."))
+  }
+}
+
+# # Exec
+sortAuHasard(lvlMax, nombreDeSorts)
+```
+
+
+Fonction pour le sort Rejeton du Chaos (Chaos 54).
+
+## Rejeton du Chaos
+
+```{r}
+## Parametres
+niveau <- 4
+nombreDeCrea <- 1
+
+## Data
+# Nom de la creature
+part1 <- c('Gloom', 'Gray', 'Dire', 'Black', 'Shadow', 'Haze', 'Wind', 'Storm', 'Warp', 'Night',
+            'Moon', 'Star', 'Pit', 'Flame', 'Ice', 'Seethe', 'Sharp', 'Ash', 'Blade', 'Steel', 'Stone',
+            'Rust', 'Mold', 'Blight', 'Plague', 'Rot', 'Ooze', 'Puke', 'Snot', 'Bile', 'Blood', 'Pulse',
+            'Gut', 'Gore', 'Flesh', 'Bone', 'Spine', 'Mind', 'Spirit', 'Soul', 'Wrath', 'Grief', 'Foul',
+            'Vile', 'Sin', 'Chaos', 'Dread', 'Doom', 'Bane', 'Death', 'Viper', 'Dragon', 'Devil')
+part2 <- c('Touch', 'Spell', 'Feast', 'Wound', 'Grin', 'Maim', 'Hack', 'Bite', 'Rend', 'Burn', 'Ripper',
+            'Kill', 'Call', 'Vex', 'Jade', 'Web', 'Shield', 'Killer', 'Razor', 'Drinker', 'Shifter',
+            'Crawler', 'Dancer', 'Bender', 'Weaver', 'Eater', 'Widow', 'Maggot', 'Spawn', 'Wight',
+            'Grumble', 'Growler', 'Snarl', 'Wolf', 'Crow', 'Raven', 'Hawk', 'Cloud', 'Bang', 'Head',
+            'Skull', 'Brow', 'Eye', 'Maw', 'Tongue', 'Fang', 'Horn', 'Thorn', 'Claw', 'Fist', 'Heart',
+            'Shank', 'Skin', 'Wing', 'Pox', 'Fester', 'Blister', 'Pus', 'Slime', 'Drool', 'Froth',
+            'Sludge', 'Venom', 'Poison', 'Break', 'Shard', 'Flame', 'Maul', 'Thirst', 'Lust')
+part3 <- c('the Hammer', 'the Axe', 'the Sharp', 'the Jagged', 'the Flayer', 'the Slasher', 'the Impaler',
+           'the Hunter', 'the Slayer', 'the Mauler', 'the Destroyer', 'the Quick', 'the Witch', 'the Mad',
+           'the Wraith', 'the Shade', 'the Dead', 'the Unholy', 'the Howler', 'the Grim', 'the Dark',
+           'the Tainted', 'the Unclean', 'the Hungry', 'the Cold')
+
+# Classe de la creature ; 1 = guerrier, 2 = magicien, 3 = d
+classes <- c("Guerrier")
+
+
+## Exec
+for (i in 1:nombreDeCrea) {
+  print(paste("Creature", i))
+  print(paste(sample(part1, 1),sample(part2, 1),sample(part3, 1)))
+  
+  maClasse <- sample(classes, 1)
+  print(paste(maClasse, "niveau", niveau))
+}
+
+
+
+```
+
+
+Fonction pour obtenir un Ogham.
+
+## Ogham loot
+
+```{r}
+# Nombre d'Oghams
+nb <- 5
+avecDetail <- F
+
+# Noms
+Noms <- c("El","Eld","Tir","Nef","Eth","Ith","Tal","Ral","Ort","Thul","Amn","Sol","Shael","Dol","Hel","Io","Lum","Ko","Fal","Lem","Pul","Um","Mal","Ist","Gul","Vex","Ohm","Lo","Sur","Ber","Jah","Cham","Zod")
+
+# Proba
+loot <- function(n=1) {
+  u <- integer(n)
+  for (i in 1:n) {
+    u[i] <- min(floor(runif(3,0,33))+1)
+  }
+  return(u)
+}
+
+monLoot <- loot(nb)
+monLoot <- monLoot[order(monLoot)]
+
+a <- table(monLoot)
+names(a) <- Noms[as.integer(names(a))]
+
+if (avecDetail) {
+  print(ifelse(nb >1, "Oghams obtenus :", "Ogham obtenu :"))
+  print(a)
+  #print(descArme[unique(monLoot)])
+} else {
+  print(ifelse(nb >1, "Oghams obtenus :", "Ogham obtenu :"))
+  print(a)
+}
+
+
+
+```
+
